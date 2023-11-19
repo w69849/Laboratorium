@@ -1,0 +1,9 @@
+int(3.0)    -  konwersja float na int
+
+float(3)    -  konwersja int na float
+
+float("3")  -  konwersja string na float
+
+str(12.4)   -  konwersja float na string
+
+bool(0)     -  konwersja int na bool

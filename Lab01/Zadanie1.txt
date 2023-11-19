@@ -1,0 +1,17 @@
+1 + 2       -  int, dodawanie
+
+1 + 4.5     -  float
+
+3 / 2       -  float, dzielenie
+
+4 / 2       -  int
+
+3 // 2      -  int, dzielenie całkowite
+
+-3 // 2     -  int
+
+11 % 2      -  int, modulo
+
+2 ** 10     -  int, potęgowanie
+
+8 ** (1/3)  -  float,
