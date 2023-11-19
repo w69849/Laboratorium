@@ -13,5 +13,5 @@ consumption = float(input("Podaj spalanie/100km: "))
 
 consumed_fuel = get_fuel_consumption(distance, consumption)
 
-print("Zużycie paliwa: ", consumed_fuel)
-print("Koszt podróży: ", get_cost(distance, consumed_fuel))
+print(f"Zużycie paliwa: {consumed_fuel}")
+print(f"Koszt podróży: {get_cost(distance, consumed_fuel)}")
