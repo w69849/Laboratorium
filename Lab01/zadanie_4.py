@@ -8,7 +8,7 @@ def get_cost(distance, consumed_fuel):
     return fuel_prize * consumed_fuel
 
 
-distance = float(input("Podaj droge: "))
+distance = random.randint(1, 100000)
 consumption = float(input("Podaj spalanie/100km: "))
 
 consumed_fuel = get_fuel_consumption(distance, consumption)
