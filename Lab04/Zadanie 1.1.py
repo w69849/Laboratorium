@@ -1,14 +1,14 @@
 def get_circle_area(r):
-    if(r>0):
-        return r*r*3.14
+    r = float(r)
+
+    if (r <= 0):
+        raise ValueError
+    else:
+        print("Pole koła: ", r*r*3.14)
+
+r = input("Podaj promień koła: ")
 
 try:
-    r = float(input("Podaj pole koła: "))
-
-    if(r <= 0):
-        raise ValueError
+    get_circle_area(r)
 except ValueError:
     print("Nie ma koła o takim promieniu")
-    exit()
-
-print(get_circle_area(r))
