@@ -13,8 +13,22 @@ def get_bmi(weight, height):
 
     return bmi, range
 
-height = int(input("Podaj wzrost (w centymetrach): "))
-weight = int(input("Podaj wagę (w kg): "))
+try:
+    height = int(input("Podaj wzrost (w centymetrach): "))
+
+    if(height <= 0):
+        raise Exception("Musisz podać liczbę dodatnią")
+
+    weight = int(input("Podaj wagę (w kg): "))
+
+    if(weight <= 0):
+        raise Exception("Musisz podać liczbę dodatnią")
+except ValueError:
+    print("To nie jest liczba całkowita")
+    exit()
+except Exception as e:
+    print(e)
+    exit()
 
 bmi, bmi_range = get_bmi(weight, height)
 print(bmi_range)
