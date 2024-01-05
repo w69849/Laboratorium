@@ -22,13 +22,16 @@ def get_triangle_area(a, b, c):
 
     return math.sqrt(circumference * (circumference - a) * (circumference - b) * (circumference - c))
 
-a = input("Podaj bok a: ")
-b = input("Podaj bok b: ")
-c = input("Podaj bok c: ")
 
-try:
-    print(get_triangle_area(a, b, c))
-except ValueError:
-    print("Musisz podać liczby dodatnie")
-except Exception as e:
-    print(e)
+while(0==0):
+    a = input("Podaj bok a: ")
+    b = input("Podaj bok b: ")
+    c = input("Podaj bok c: ")
+
+    try:
+        print(get_triangle_area(a, b, c))
+        exit()
+    except ValueError:
+        print("Musisz podać liczby dodatnie")
+    except Exception as e:
+        print(e)
