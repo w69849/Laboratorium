@@ -17,14 +17,14 @@ def quadratic_equation(a, b=0, c=0):
 
         print(x0)
 
-        return x0
+        return [x0]
     else:
         x1 = ((-b) - (math.sqrt(delta))) / (2*a)
         x2 = ((-b) + (math.sqrt(delta))) / (2*a)
 
         print(f"x1 = {x1}", f"x2 = {x2}")
 
-        return x1, x2
+        return [x1, x2]
 
 
 while(0 == 0):
